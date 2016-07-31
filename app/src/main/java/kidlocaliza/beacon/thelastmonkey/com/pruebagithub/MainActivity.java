@@ -15,12 +15,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnHola = (Button)findViewById(R.id.btnHola);
-        System.out.println("Funciona el boton");
-        Toast.makeText(getApplicationContext(),"Hola saludos",Toast.LENGTH_SHORT).show();
+
+
         btnHola.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.out.println("Funciona el boton");
+                Toast.makeText(getApplicationContext(),"Hola saludos",Toast.LENGTH_SHORT).show();
             }
         });
     }
